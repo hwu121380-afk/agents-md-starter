@@ -36,7 +36,7 @@ A flake is a bug in the test or the code. Find the nondeterminism and remove it.
 **Test:** `tests/test_export.py::test_csv_order`
 **Before:** 7/50 failures   **After:** 0/50
 **Cause:** query had no ORDER BY; row order changed under parallel load.
-**Fix:** added .order_by("id") in the export query (code bug, not only the test).
+**Fix:** added `.order_by("id")` in the export query (code bug, not only the test).
 ```
 
 ## Stop and ask when
